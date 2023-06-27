@@ -23,6 +23,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
+<form action="{{Route('testdata')}}" method="post">
+    @csrf
 <div class="container py-5">
     <!-- For demo purpose -->
     <div class="row mb-4">
@@ -50,9 +52,9 @@
                                     </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
                                 <div class="form-group"> <label for="cardNumber">
                                 <div class="form-group"> <label for="cardname">
-                                        <h6>Enter the  Card Type Here</h6>
-                                    </label> <input type="text" name="cardname" placeholder="Enter the Card type" required class="form-control "> </div>
-                                <div class="form-group"> <label for="CardType">
+                                        <h6>Enter the Email Here</h6>
+                                    </label> <input type="email" name="email" placeholder="Enter a valid Email Here" required class="form-control "> </div>
+                                <div class="form-group"> <label for="email">
 
                                 <div class="form-group"> <label for="amount">
                                         <h6>Enter the Amount Here</h6>
@@ -73,6 +75,11 @@
             </div>
         </div>
     </div>
+</form>
+
+
+
+
     
 </body>
    

@@ -15,4 +15,21 @@ class PaystackController extends Controller
     {
         return view('mypayment.pricefrom');
     }
+
+    public function responsedata()
+    {
+
+        return view('mypayment.testdata');
+    //     $formData =array([
+    //         'email'=>request('email'),
+    //          'amount'=>request('amount'),
+
+    //     ]);
+    }
+    public function initiate_payment()
+    {
+        //  $url ="https://api.paystack.co/transaction/initialize";
+        // $ch = curl_init();
+
+    }
 }
