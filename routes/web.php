@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('paystack.com',[PaystackController::class,'mypayment']);
 Route::get('price.com',[PaystackController::class,'propayment']);
 Route::post('testdata',[PaystackController::class,'responsedata']);
+Route::get('pay/callback',[PaystackController::class,'payment_callback'])->name('pay.callback');
