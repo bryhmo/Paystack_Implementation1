@@ -55,10 +55,8 @@ class PaystackController extends Controller
          curl_setopt($ch,CURLOPT_POST,true);
          curl_setopt($ch,CURLOPT_FIELDS,$fields_string);
          curl_setopt($ch,CURLOPT_HTTPHEADER, array(
-            [
-            "Authorization:Bearer" . env("PAYSTACK_SECRET_KEY"),
+            "Authorization:Bearer".env("PAYSTACK_SECRET_KEY"),
             "cache-control:no-cache",
-            ]
          ));
          curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
          $result =curl_exec($ch);

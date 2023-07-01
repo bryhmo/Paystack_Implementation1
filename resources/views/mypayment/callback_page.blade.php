@@ -6,7 +6,14 @@
     <title>Callback Page</title>
 </head>
 <body>
-    <h1>this the callback page</h1>
+   <table>
+    <tbody>
+        <tr><td>Status:</td><td>{{$data->status}}</td></tr>
+        <tr><td>Status:</td><td>{{$data->status}}</td></tr>
+        <tr><td>Status:</td><td>{{$data->status}}</td></tr>
+        <tr><td>Status:</td><td>{{$data->status}}</td></tr>
+    </tbody>
+   </table>
     
 </body>
 </html>
